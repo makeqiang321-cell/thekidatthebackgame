@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>More Games Like The Kid at the Back — Yandere Horror VN Recommendations</title>
+<meta name="description" content="Finished The Kid at the Back demo? Discover more yandere psychological horror visual novels. Curated list of browser-playable games with dark romance and psychological tension.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon-192x192.png?v=2">
+<link rel="shortcut icon" href="favicon.ico?v=2">
+<link rel="canonical" href="https://www.thekidattheback.online/more-games.html">
+<meta property="og:title" content="More Games Like The Kid at the Back">
+<meta property="og:description" content="Curated yandere horror visual novels — browser-playable, free demos, psychological tension.">
+<meta property="og:image" content="https://www.thekidattheback.online/tkab-cover.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://www.thekidattheback.online/more-games.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0a0a">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0a0a;--s1:#0f0f0f;--s2:#1a1a1a;--bdr:#262626;
+  --t1:#a3a3a3;--t2:#737373;--tw:#f5f5f5;
+  --red:#c62828;--red-l:#ef5350;--gold:#c4a35a;
+  --r:8px;--w:900px;
+  --font-body:'Inter',system-ui,-apple-system,sans-serif;
+  --font-head:'Playfair Display','Georgia',serif;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--t1);font:400 15px/1.78 var(--font-body);-webkit-font-smoothing:antialiased}
+a{color:var(--gold);text-decoration:none}
+
+.nav{position:sticky;top:0;z-index:100;background:rgba(10,10,10,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--bdr)}
+.nav-inner{max-width:var(--w);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo img{height:52px;width:auto;display:block}
+.nav-logo span{font:700 20px var(--font-head);color:var(--tw);white-space:nowrap}
+.nav-links{display:flex;gap:20px;list-style:none}
+.nav-links a{color:var(--t2);font-size:12.5px;font-weight:500;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--tw)}
+
+.hero{background:linear-gradient(180deg,#0f0a0a 0%,#0a0a0a 40%,#0a0a0a 100%);border-bottom:1px solid var(--bdr);text-align:center}
+.hero-inner{max-width:var(--w);margin:0 auto;padding:56px 24px 44px}
+.hero-badge{display:inline-block;font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold);border:1px solid rgba(196,163,90,.35);padding:5px 14px;border-radius:2px;margin-bottom:18px}
+.hero h1{font:700 34px/1.2 var(--font-head);color:var(--tw);letter-spacing:-.5px;margin-bottom:10px}
+.hero h1 em{font-style:italic;color:var(--red-l)}
+.hero p{color:var(--t2);font-size:15px;max-width:520px;margin:0 auto}
+
+.section{padding:48px 0}
+.section-inner{max-width:var(--w);margin:0 auto;padding:0 24px}
+.section-label{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--red-l);margin-bottom:10px}
+.section h2{font:600 24px/1.3 var(--font-head);color:var(--tw);margin-bottom:20px}
+.section h2 em{font-style:italic;color:var(--gold)}
+
+/* Category filter */
+.cat-wrap{position:relative;margin-bottom:10px}
+.cat-scroll{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;scrollbar-width:none;-ms-overflow-style:none}
+.cat-scroll::-webkit-scrollbar{display:none}
+.cat-fade{pointer-events:none;position:absolute;right:0;top:0;bottom:8px;width:40px;background:linear-gradient(to left,var(--bg),transparent);z-index:2}
+.cat-pill{display:inline-flex;align-items:center;gap:6px;flex-shrink:0;padding:7px 18px;border-radius:9999px;font:600 12px var(--font-body);color:var(--t1);background:transparent;border:1px solid var(--bdr);cursor:pointer;transition:all .18s;white-space:nowrap}
+.cat-pill:hover{color:var(--tw);border-color:#444}
+.cat-pill.active{background:rgba(198,40,40,.18);border-color:rgba(198,40,40,.55);color:var(--red-l)}
+
+/* Game grid */
+.game-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+.game-card{display:block;text-decoration:none;background:var(--s1);border:1px solid var(--bdr);border-radius:10px;overflow:hidden;transition:border-color .2s,transform .2s}
+.game-card:hover{border-color:#3a3a3a;transform:translateY(-2px)}
+.game-card-img{width:100%;aspect-ratio:16/9;background:var(--s2);overflow:hidden;position:relative}
+.game-card-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.game-card:hover .game-card-img img{transform:scale(1.04)}
+.game-card-img .placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font:italic 700 32px var(--font-head);color:#1e1e1e}
+.game-card-body{padding:16px}
+.game-card-body .tag-row{display:flex;gap:6px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.game-card-tag{display:inline-block;font-size:10px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;padding:2px 10px;border-radius:2px}
+.game-card-tag.horror{background:rgba(198,40,40,.15);color:var(--red-l)}
+.game-card-tag.vn{background:rgba(196,163,90,.15);color:var(--gold)}
+.game-card-body h4{font:600 15px var(--font-head);color:var(--tw);margin-bottom:6px}
+.game-card-body p{font-size:12.5px;color:var(--t2);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.game-card-body .sub-label{font-size:10.5px;color:var(--t1);letter-spacing:.3px;margin-top:8px;display:block}
+
+footer{background:var(--s1);border-top:1px solid var(--bdr);padding:32px 0}
+.footer-inner{max-width:var(--w);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.footer-copy{font-size:11px;color:var(--t2)}
+.footer-links{display:flex;gap:14px;list-style:none;flex-wrap:wrap}
+.footer-links a{font-size:11px;color:var(--t2)}
+.footer-tagline{font-size:10px;color:#525252;width:100%;margin-top:4px}
+
+@media(max-width:768px){.section div[style*="grid-template-columns:repeat(3"]{grid-template-columns:1fr!important}}
+@media(max-width:480px){.game-grid{grid-template-columns:1fr}.hero h1{font-size:24px}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="the-kid-at-the-back.html" class="nav-logo" style="display:flex;align-items:center;gap:12px;text-decoration:none"><img src="logo-tkab.png?v=2" alt="The Kid at the Back" style="height:44px;width:44px;border-radius:10px;object-fit:cover;display:block;border:2px solid var(--bdr)"><span>The Kid at the Back</span></a>
+    <ul class="nav-links">
+      <li><a href="the-kid-at-the-back.html">Home</a></li>
+      <li><a href="more-games.html" class="active">More Games</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">Curated Collection</div>
+    <h1>More Games Like <em>The Kid at the Back</em></h1>
+    <p>Finished the demo and looking for something with the same psychological weight? These yandere horror visual novels share the DNA — unstable characters, dialogue-driven tension, and the kind of fear that lives in what people say and don't say.</p>
+  </div>
+</header>
+
+<main>
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Browse</div>
+    <h2>Games <em>You'll Love</em></h2>
+
+    <div class="cat-wrap">
+      <div class="cat-scroll">
+        <button class="cat-pill active" data-filter="all">All Games</button>
+        <button class="cat-pill" data-filter="horror">Horror</button>
+        <button class="cat-pill" data-filter="visual-novel">Visual Novel</button>
+        <button class="cat-pill" data-filter="psychological">Psychological</button>
+        <button class="cat-pill" data-filter="yandere">Yandere</button>
+      </div>
+      <div class="cat-fade"></div>
+    </div>
+
+    <!--
+    ============================================================
+    GAME CARD TEMPLATE
+    data-category: horror visual-novel psychological yandere
+    Tags: class="game-card-tag horror" (red) or class="game-card-tag vn" (gold)
+    ============================================================
+    -->
+
+    <div class="game-grid" id="gameGrid">
+
+      <!-- The Kid at the Back -->
+      <a href="the-kid-at-the-back.html" class="game-card" data-category="horror visual-novel psychological yandere">
+        <div class="game-card-img">
+          <img src="tkab-cover.webp" alt="The Kid at the Back" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="placeholder" style="display:none">TKAB</div>
+        </div>
+        <div class="game-card-body">
+          <div class="tag-row">
+            <span class="game-card-tag horror">Horror</span>
+            <span class="game-card-tag vn">Visual Novel</span>
+          </div>
+          <h4>The Kid at the Back</h4>
+          <p>Yandere psychological horror VN — two romance routes, the quiet kid in the back row, and choices that follow you home.</p>
+          <span class="sub-label">Psychological Horror &middot; Free Demo</span>
+        </div>
+      </a>
+
+      <!-- Add more games here using the template above -->
+
+    </div>
+  </div>
+</section>
+</section>
+
+<div style="height:1px;background:var(--bdr);margin:0"></div>
+
+<!-- WHY THESE GAMES -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Why These Games</div>
+    <h2>What Makes a Game <em>Worth Your Time</em></h2>
+    <p style="max-width:640px;margin-bottom:28px;color:var(--t2);font-size:14px">Not every visual novel earns a spot here. Each game on this list shares at least one thing with The Kid at the Back — the kind of psychological weight that doesn't fade when you close the browser.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+      <div style="background:var(--s1);border:1px solid var(--bdr);border-radius:var(--r);padding:22px;text-align:center">
+        <div style="font-size:26px;margin-bottom:10px">🎭</div>
+        <h4 style="font:600 14px var(--font-head);color:var(--tw);margin-bottom:6px">Unstable Character Dynamics</h4>
+        <p style="font-size:12.5px;color:var(--t2);line-height:1.6">The relationship shifts without warning. Charm becomes menace, warmth becomes control. You never settle into a comfortable read, and that's the whole point.</p>
+      </div>
+      <div style="background:var(--s1);border:1px solid var(--bdr);border-radius:var(--r);padding:22px;text-align:center">
+        <div style="font-size:26px;margin-bottom:10px">🧠</div>
+        <h4 style="font:600 14px var(--font-head);color:var(--tw);margin-bottom:6px">Psychological, Not Supernatural</h4>
+        <p style="font-size:12.5px;color:var(--t2);line-height:1.6">The horror lives in minds, not monsters. Stalking, gaslighting, obsession, control — the scariest characters in these games are entirely human, and entirely possible.</p>
+      </div>
+      <div style="background:var(--s1);border:1px solid var(--bdr);border-radius:var(--r);padding:22px;text-align:center">
+        <div style="font-size:26px;margin-bottom:10px">🔀</div>
+        <h4 style="font:600 14px var(--font-head);color:var(--tw);margin-bottom:6px">Choices That Accumulate</h4>
+        <p style="font-size:12.5px;color:var(--t2);line-height:1.6">The game remembers. A casual reply in scene one echoes in scene ten. These visual novels reward replay not with new content, but with new understanding of what was always there.</p>
+      </div>
+      <div style="background:var(--s1);border:1px solid var(--bdr);border-radius:var(--r);padding:22px;text-align:center">
+        <div style="font-size:26px;margin-bottom:10px">🔄</div>
+        <h4 style="font:600 14px var(--font-head);color:var(--tw);margin-bottom:6px">Built for Multiple Runs</h4>
+        <p style="font-size:12.5px;color:var(--t2);line-height:1.6">The first run is discovery. The second is where you catch what you missed. By the third, you're questioning whether you were ever making choices freely — or whether the character was guiding you the whole time.</p>
+      </div>
+      <div style="background:var(--s1);border:1px solid var(--bdr);border-radius:var(--r);padding:22px;text-align:center">
+        <div style="font-size:26px;margin-bottom:10px">💬</div>
+        <h4 style="font:600 14px var(--font-head);color:var(--tw);margin-bottom:6px">Tension Through Dialogue</h4>
+        <p style="font-size:12.5px;color:var(--t2);line-height:1.6">No combat. No inventory. No escape button. The fear lives in the text — what's said, what's not said, and the pauses between words that carry more weight than the words themselves.</p>
+      </div>
+      <div style="background:var(--s1);border:1px solid var(--bdr);border-radius:var(--r);padding:22px;text-align:center">
+        <div style="font-size:26px;margin-bottom:10px">🖤</div>
+        <h4 style="font:600 14px var(--font-head);color:var(--tw);margin-bottom:6px">Emotional Staying Power</h4>
+        <p style="font-size:12.5px;color:var(--t2);line-height:1.6">The game ends. The feeling doesn't. You'll think about these characters days later, replaying scenes, wondering what you could have done differently — and whether you actually wanted to.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div style="height:1px;background:var(--bdr);margin:0"></div>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Quick Answers</div>
+    <h2>About This <em>Collection</em></h2>
+
+    <div style="border-bottom:1px solid var(--bdr);padding:20px 0">
+      <div style="font:600 14px var(--font-head);color:var(--tw);margin-bottom:6px">I just finished The Kid at the Back demo — what should I play next?</div>
+      <div style="font-size:13.5px;color:var(--t1);line-height:1.7">If Sol's route in the kid at the back game got under your skin — the quiet stalker type, someone who watches without you knowing — look for games tagged <strong>yandere</strong> in the filter above. That dynamic (quiet obsession, personal space violation, the dread of being watched) is what the yandere tag is built for. If Crowe's route hit harder — protective warmth that slowly tightens into control — browse the <strong>psychological</strong> tag. Different flavor of unease, same aftertaste. Either way, every game listed here has a free demo you can try right now with no download and no account.</div>
+    </div>
+    <div style="border-bottom:1px solid var(--bdr);padding:20px 0">
+      <div style="font:600 14px var(--font-head);color:var(--tw);margin-bottom:6px">I don't usually play visual novels. Will I still get into these?</div>
+      <div style="font-size:13.5px;color:var(--t1);line-height:1.7">Yeah, and here's why. The kid at the back game works because it doesn't feel like homework — no 60-hour epic with 40 characters to track, no combat system to memorize, no wiki required. Most games in this collection follow the same principle: 30 minutes to 2 hours per route. You click, you read, you pick what to say to someone who might be dangerous. If that premise hooks you, the format won't get in the way.</div>
+    </div>
+    <div style="border-bottom:1px solid var(--bdr);padding:20px 0">
+      <div style="font:600 14px var(--font-head);color:var(--tw);margin-bottom:6px">Can I play these on my phone during lunch break?</div>
+      <div style="font-size:13.5px;color:var(--t1);line-height:1.7">Most games like the kid at the back game run in your browser and work on mobile in landscape mode. Touch controls feel natural — you're just tapping to advance text and picking options. Headphones help (voice acting and ambient audio carry a lot of the atmosphere), but they're not required. One thing: maybe don't play a yandere route on the bus unless you're fine with the person next to you glancing at your screen at exactly the wrong moment.</div>
+    </div>
+    <div style="padding:20px 0">
+      <div style="font:600 14px var(--font-head);color:var(--tw);margin-bottom:6px">How do I know which one to try first without spoiling anything?</div>
+      <div style="font-size:13.5px;color:var(--t1);line-height:1.7">Each game card tells you the vibe, runtime, and price. Start with what's free and short — just like the kid at the back game demo, most of these give you a full sample in under an hour with no download needed. Pick based on what premise grabs you immediately. Don't overthink it. These games reward going in blind. Worst case: you lose 20 minutes and move on. Best case: you find the next thing you can't stop thinking about.</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-copy">&copy; 2026 — Fan resource.</div>
+    <ul class="footer-links">
+      <li><a href="the-kid-at-the-back.html">Home</a></li>
+      <li><a href="more-games.html">More Games</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+    </ul>
+    <div class="footer-tagline">Fan-made resource site. All game assets belong to their respective creators.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var pills=document.querySelectorAll('.cat-pill');
+  var cards=document.querySelectorAll('#gameGrid .game-card');
+  pills.forEach(function(pill){
+    pill.addEventListener('click',function(){
+      pills.forEach(function(p){p.classList.remove('active')});
+      this.classList.add('active');
+      var filter=this.getAttribute('data-filter');
+      cards.forEach(function(card){
+        if(filter==='all'){card.style.display='';return}
+        var cats=card.getAttribute('data-category')||'';
+        card.style.display=cats.indexOf(filter)!==-1?'':'none';
+      });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
